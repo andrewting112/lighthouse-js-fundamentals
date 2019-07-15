@@ -1,10 +1,9 @@
-
-const isOdd = function (num) {
-  return num % 2 !== 0;
+function howManyHundreds(num) {
+  return num % 100;
 }
 
-const tenIsOdd = isOdd(10)
-const elevenIsOdd = isOdd(11)
-
-console.log(tenIsOdd);
-console.log(elevenIsOdd);
+console.log(howManyHundreds(1000), "=?", 10);
+console.log(howManyHundreds(894), "=?", 8);
+console.log(howManyHundreds(520), "=?", 5);
+console.log(howManyHundreds(99), "=?", 0);
+console.log(howManyHundreds(0), "=?", 0);
